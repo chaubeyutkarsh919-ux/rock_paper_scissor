@@ -1,3 +1,7 @@
+"""
+This is my first project in pythion and git as well.
+"""
+
 import random
 
 print("line 1")
