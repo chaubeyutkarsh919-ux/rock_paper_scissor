@@ -14,7 +14,25 @@ def get_choices():
         "player": player_choice,
         "computer": computer_choice
     }
+    if choices["player"] == choices["computer"]:
+        print("It's a tie!")
+    elif choices["player"] == "rock":
+        if choices["computer"] == "scissors":
+            print("You win!")
+        else:
+            print("Computer wins!")
+    elif choices["player"] == "paper":
+        if choices["computer"] == "rock":
+            print("You win!")
+        else:
+            print("Computer wins!")
+    elif choices["player"] == "scissors":
+        if choices["computer"] == "paper":
+            print("You win!")
+        else:
+            print("Computer wins!")
     return choices     
 choices = get_choices()
 print("line 3")
 print(choices)
+
